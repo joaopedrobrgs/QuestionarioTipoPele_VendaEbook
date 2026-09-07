@@ -533,7 +533,7 @@ IDENTIDADE VISUAL
 
 [IdentidadeVisual](IdentidadeVisual.jpeg)
 +
-[SiteInstitucionalDraNataliaFernandes](SiteInstitucionalDraNataliaFernandes/index.html)
+[SiteInstitucionalDraNataliaFernandes](SiteInstitucionalDraNataliaFernandes) => Site completo em React. Coloquei todos os arquivos na pasta, inclusive assets que forem necessários.
 
 --------------------------------------------------
 Requisitos obrigatórios desenvolvimento
