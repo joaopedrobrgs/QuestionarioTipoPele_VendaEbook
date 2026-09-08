@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f6efe9;
+  --color-sand: #efe6df;
+  --color-rose: #c8b3aa;
+  --color-taupe: #8b7a75;
+  --color-mocha: #6f5b55;
+  --color-brown: #8f716b;
+  --color-wood: #8c756f;
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --shadow-soft: 0 20px 60px -40px rgba(79, 60, 55, 0.6);
+}
+
+:root {
+  color-scheme: light;
+  font-family: var(--font-sans);
+  background: var(--color-cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100dvh; }
+button, input { font: inherit; }
+button:focus-visible, input:focus-visible + span, a:focus-visible {
+  outline: 3px solid var(--color-taupe);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 50;
+  top: 0.75rem;
+  left: 0.75rem;
+  transform: translateY(-160%);
+  border-radius: 999px;
+  background: var(--color-mocha);
+  color: var(--color-cream);
+  padding: 0.75rem 1rem;
+  transition: transform 180ms ease;
+}
+.skip-link:focus { transform: translateY(0); }
+
+.pattern-lines {
+  background-image: repeating-linear-gradient(120deg, transparent 0 42px, currentColor 43px 44px, transparent 45px 88px);
+}
+
+.progress-bar { appearance: none; border: 0; }
+.progress-bar::-webkit-progress-bar { border-radius: 999px; background: var(--color-sand); }
+.progress-bar::-webkit-progress-value { border-radius: 999px; background: var(--color-brown); transition: width 500ms ease; }
+.progress-bar::-moz-progress-bar { border-radius: 999px; background: var(--color-brown); }
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes question {
+  from { opacity: 0; transform: translateX(14px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.animate-reveal { animation: reveal 650ms cubic-bezier(.22,.8,.25,1) both; }
+.animate-reveal-delayed { animation: reveal 650ms 120ms cubic-bezier(.22,.8,.25,1) both; }
+.animate-question { animation: question 360ms ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}

@@ -389,10 +389,6 @@ Criar uma interface sofisticada, limpa e feminina, relacionada ao universo de sk
 
 Priorizar:
 
-- fundo claro
-- verde escuro sofisticado como cor principal
-- verde claro para destaques
-- tons neutros/off-white
 - cards com cantos arredondados
 - tipografia elegante e legível
 - bastante espaço em branco
@@ -400,7 +396,7 @@ Priorizar:
 - design responsivo
 - ótima experiência no celular
 
-A referência visual fornecida mostra uma identidade com verde escuro, verde vibrante e elementos arredondados. Usar essa referência apenas como inspiração visual, sem copiar literalmente.
+A identidade visual fornecida deve orientar a paleta, a tipografia e os elementos gráficos da interface, sem ser copiada literalmente.
 
 O quiz deve parecer um produto profissional de skincare, e não um formulário genérico.
 
