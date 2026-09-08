@@ -76,5 +76,6 @@ export const conteudoEbook = {
   botao: 'Quero conhecer o guia',
   placeholder: 'Em breve, acesso ao guia por aqui.',
   selo: 'Conhecimento • rotina • resultados reais',
+  imagemFundo: '/assets/dra-natalia-hero.jpg',
   capitulos: ['Entenda sua pele', 'Monte sua rotina', 'Escolha com consciência'],
 } as const

@@ -11,8 +11,17 @@ export function OfertaEbook({ aoClicar }: OfertaEbookProps) {
   return (
     <section className="mt-10 overflow-hidden rounded-[2.25rem] bg-mocha text-cream shadow-soft lg:grid lg:grid-cols-[0.9fr_1.1fr]">
       <div className="relative min-h-80 overflow-hidden bg-rose p-8 text-mocha sm:p-10">
-        <div className="absolute inset-0 opacity-25 pattern-lines" aria-hidden="true" />
-        <div className="relative mx-auto flex aspect-[3/4] max-w-64 -rotate-2 flex-col justify-between rounded-r-2xl border-l-[10px] border-brown/35 bg-cream p-7 shadow-2xl transition-transform duration-500 hover:rotate-0 motion-reduce:transition-none">
+        <img
+          src={conteudoEbook.imagemFundo}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 size-full scale-110 object-cover object-top blur-[6px] saturate-75"
+        />
+        <div className="absolute inset-0 bg-mocha/35" aria-hidden="true" />
+        <div className="absolute inset-0 opacity-15 pattern-lines" aria-hidden="true" />
+        <div className="relative mx-auto flex aspect-[3/4] max-w-64 -rotate-2 flex-col justify-between rounded-r-2xl border-l-[10px] border-brown/35 bg-cream p-7 shadow-2xl transition-transform duration-500 hover:rotate-0 motion-reduce:transition-none lg:translate-y-42">
           <BookOpen size={28} strokeWidth={1.4} aria-hidden="true" />
           <h3 className="font-display text-4xl leading-none">{conteudoEbook.nome}</h3>
           <span className="text-[0.6rem] font-bold uppercase tracking-[0.22em]">{conteudoEbook.selo}</span>

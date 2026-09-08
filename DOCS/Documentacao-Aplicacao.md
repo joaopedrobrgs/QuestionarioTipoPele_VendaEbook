@@ -85,6 +85,7 @@ Em desenvolvimento, os eventos também são apresentados no console para facilit
 
 - Tokens visuais e fontes são definidos em `src/styles.css` por meio de `@theme`, sem `tailwind.config.js`.
 - A landing page utiliza o painel gráfico abstrato da identidade; o monograma oficial fica em `public/assets/icone-nf.png`.
+- Na oferta exibida após o resultado, o mockup do ebook aparece sobre uma versão desfocada da foto da Dra. Natália usada no HERO do site institucional.
 - Títulos usam Cormorant Garamond, enquanto textos e controles usam Manrope.
 - `index.html` configura idioma pt-BR, título, descrição, Open Graph, theme color e favicon.
 - A aplicação não depende de roteamento, serviços externos ou bibliotecas de animação, reduzindo o JavaScript inicial.
